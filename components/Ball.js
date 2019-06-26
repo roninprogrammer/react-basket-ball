@@ -54,7 +54,7 @@ class Ball extends Component {
       >
         <Image
           renderToHardwareTextureAndroid
-          source={{uri: ''}} style={[{
+          source={{uri: 'https://github.com/roninprogrammer/react-basket-ball/blob/master/%20assets/ball.png?raw=true'}} style={[{
             width: this.props.radius * 2,
             height: this.props.radius * 2,
             borderRadius: this.props.radius,
