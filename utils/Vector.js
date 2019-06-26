@@ -41,8 +41,6 @@ var Vector = (
 	    vector.prototype.multiply = function (scalar) {
 	        var newX = this.getX() * scalar;
 	        var newY = this.getY() * scalar;
-	        //this.setX(this.getX() * scalar);
-	        //this.setY(this.getY() * scalar);
 	        return new vector(newX,newY);
 	    }
 
@@ -71,9 +69,6 @@ var Vector = (
 	    vector.prototype.dot = function (otherVector) {
 	        var dotProduct = ((this.x * otherVector.getX()) + (this.y * otherVector.getY()));
 	        return dotProduct;
-	        //var newX = this.x * otherVector.getX();
-	        //var newY = this.y * otherVector.getY();
-	        //return new vector(newX,newY);
 	    }
 
 	    return vector;

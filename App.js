@@ -42,9 +42,7 @@ const LC_RESTARTING_FALLING = 5;
 export default class App extends Component {
   constructor(props) {
       super(props);
-
       this.interval = null;
-
       // initialize ball states
       this.state = {
         x: Dimensions.get('window').width / 2 - radius,
@@ -94,7 +92,7 @@ export default class App extends Component {
       return false;
     }
 
-    // Inspired by http://www.adambrookesprojects.co.uk/project/canvas-collision-elastic-collision-tutorial/
+
     updateCollisionVelocity(nextState, ball, netBorder) {
       const xDistance = (netBorder.x - ball.x);
       const yDistance = (netBorder.y - ball.y);
